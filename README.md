@@ -7,7 +7,9 @@ This is an HowTo for install Iobroker on Debian and derivate
 I will install Iobroker direct on the System because, i do not find
 a Docker container for the Raspberry Pi.
 
-# 1. Step
-## Install Iobroker
+# 1. Step - Install Iobroker
+
+## Install all last updates
+sudo apt get update && sudo apt dist-upgrade -y
 
 
