@@ -14,7 +14,9 @@ so it will be very easy to install al stuff.
 # 1. Step - Install Iobroker
 
 Install all last updates
-sudo apt update && sudo apt dist-upgrade -y
+<pre><code>sudo apt update && sudo apt dist-upgrade -y
+</code></pre>
+
 
 - Install Node.js first
 curl -sLf https://deb.nodesource.com/setup_12.x | sudo -E bash -
@@ -34,4 +36,5 @@ sudo apt-get install libffi-dev libssl-dev
 sudo apt install python3-dev
 sudo apt-get install -y python3 python3-pip
 
-
+<pre><code>
+</code></pre>
