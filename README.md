@@ -34,7 +34,7 @@ install docker
 <pre><code>curl -sSL https://get.docker.com | sh
 </code></pre>
 
-install docker-compose
+install python3 and pip
 <pre><code>sudo apt install libffi-dev libssl-dev -y
 sudo apt install python3-dev -y
 sudo apt install python3 python3-pip -y
