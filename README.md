@@ -13,12 +13,12 @@ so it will be very easy to install al stuff.
 
 # 1. Step - Install Iobroker
 
-Install all last updates
+install all last updates
 <pre><code>sudo apt update && sudo apt dist-upgrade -y
 </code></pre>
 
 
-Install Node.js first
+install Node.js first
 <pre><code>curl -sLf https://deb.nodesource.com/setup_12.x | sudo -E bash -
 </code></pre>
 <pre><code>sudo apt-get install -y nodejs
@@ -26,6 +26,7 @@ Install Node.js first
 now install Iobroker
 <pre><code>curl -sLf https://iobroker.net/install.sh | bash -
 </code></pre>
+
 
 # 2. install Docker with docker-compose 
 
@@ -40,5 +41,5 @@ sudo apt install python3 python3-pip -y
 </code></pre>
 
 
-<pre><code>
+<pre><code>sudo pip3 install docker-compose
 </code></pre>
