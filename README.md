@@ -13,7 +13,7 @@ so it will be very easy to install al stuff.
 
 # 1. Step - Install Iobroker
 
-- Install all last updates
+Install all last updates
 sudo apt update && sudo apt dist-upgrade -y
 
 - Install Node.js first
