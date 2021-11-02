@@ -40,6 +40,8 @@ sudo apt install python3-dev -y
 sudo apt install python3 python3-pip -y
 </code></pre>
 
-
+now install docker-compose
 <pre><code>sudo pip3 install docker-compose
 </code></pre>
+this take some time
+
