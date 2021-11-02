@@ -45,3 +45,8 @@ now install docker-compose
 </code></pre>
 this take some time
 
+# 3. enable docker system service to start container on boot
+<pre><code>sudo systemctl enable docker
+</code></pre>
+
+
