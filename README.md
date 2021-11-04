@@ -1,14 +1,13 @@
-# io_influx_grafa
+# IoBroker with InfluxDB and Grafana
 
-Iobroker and Docker with Influxdb and Grafana
+This is a howto for installing Iobroker on debian or derivate.
 
-This is an HowTo for install Iobroker on Debian and derivate
-
-I will install Iobroker direct on the System because, i do not find
-a Docker container for the Raspberry Pi.
+I will install Iobroker native on the system because, i don't find
+a docker container for the Raspberry Pi 4.
+This howto is also for normal x86 maschines.
 
 For InfluxDB and Grafana i provide here an docker-compose file.
-so it will be very easy to install al stuff.
+so it will be very easy to install all stuff.
 
 
 # 1. Step - Install Iobroker
@@ -43,7 +42,7 @@ sudo apt install python3 python3-pip -y
 now install docker-compose
 <pre><code>sudo pip3 install docker-compose
 </code></pre>
-this take some time
+This take some time, on a raspberry, please wait so long.
 
 # 3. enable docker system service to start container on boot
 <pre><code>sudo systemctl enable docker
