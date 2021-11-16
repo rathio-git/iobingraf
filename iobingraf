@@ -51,12 +51,32 @@ sudo mv docker-compose.yaml /media/docker/iobingraf/docker-compose.yaml
 sudo cd /media/docker/iobingraf
 sudo docker-compose up -d
 cd ~
-
+clear
 echo " "
-echo "InfluxDB data"
-echo "user=admin"
-echo "password=admin"
-echo "DB-Name=iobroker"
+echo " "
+echo "Installation complete"
+echo "---------------------"
+echo " "
+echo "Iobroker Data"
+echo "Port = 8081"
+echo " "
+echo "----------------"
+echo " "
+echo "InfluxDB Data"
+echo "Port = 8086"
+echo "User = admin"
+echo "Password = admin"
+echo "DB-Name = iobroker"
+echo " "
+echo "----------------"
+echo " "
+echo "Grafana Data"
+ech0 "Port = 3000"
+echo " "
+echo " "
+echo "Have a lot of fun." 
+echo "rathio"
+echo " "
 echo " "
 
 
