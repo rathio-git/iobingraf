@@ -39,6 +39,8 @@ sudo mkdir /media/docker
 sudo mkdir /media/docker/iobingraf
 sudo mkdir /media/docker/influxdb
 sudo mkdir /media/docker/grafana
+sudo chmod 775 /media/docker/influxdb
+sudo chmod 775 /media/docker/grafana
 
 echo " "
 echo "Create InfluxDB and Grafana Container"
