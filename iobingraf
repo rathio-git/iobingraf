@@ -46,7 +46,7 @@ echo " "
 echo "Create InfluxDB and Grafana Container"
 echo "-------------------------------------"
 sleep 1
-wget https://github.com/rathio-git/iobingraf/blob/main/docker-compose.yaml
+wget https://raw.githubusercontent.com/rathio-git/iobingraf/main/docker-compose.yaml
 sudo mv docker-compose.yaml /media/docker/iobingraf/docker-compose.yaml
 sudo docker-compose /media/docker/iobingraf/docker-compose.yaml
 
