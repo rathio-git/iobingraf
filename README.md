@@ -9,7 +9,7 @@ This script will also works on normal x86 maschines.
 
 to Install you only need this line 
 ```
-wget https://github.com/rathio-git/iobingraf/blob/main/iobingraf | bash -
+wget https://raw.githubusercontent.com/rathio-git/iobingraf/main/iobingraf | bash -
 ```
 \
 \
