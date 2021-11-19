@@ -10,9 +10,9 @@ services:
     ports:
       - "8086:8086"
     environment:
-      - INFLUXDB_ADMIN_USER=admin
-      - INFLUXDB_ADMIN_PASSWORD=admin
-      - INFLUXDB_DB=iobroker
+      - INFLUXDB_ADMIN_USER="${adminname}"
+      - INFLUXDB_ADMIN_PASSWORD="${adminpassword}"
+      - INFLUXDB_DB="${dbname}"
 
   # Creates a Grafana dashborad
   grafana:

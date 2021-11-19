@@ -1,5 +1,23 @@
 #!/usr/bin/env sh
 
+echo ""
+echo ""
+echo "Influxdb database for IoBroker"
+echo "-----------------------------"
+echo ""
+tput setaf 2; echo "Please enter a name for the database"
+tput sgr0; read dbname 
+
+echo ""
+tput setaf 2; echo "Please enter a name for the admin-user of the Iobroker database"
+tput sgr0; read adminname
+
+echo ""
+tput setaf 2; echo "Please enter a password for the admin-user"
+tput sgr0; read  adminpassword
+
+
+echo " "
 echo " "
 echo "System Update"
 echo "-------------"
@@ -46,8 +64,12 @@ echo " "
 echo "Create InfluxDB and Grafana Container"
 echo "-------------------------------------"
 sleep 1
+echo "db_name="$dbname >> .envtmp
+echo "db_user="$adminname >> .envtmp
+echo "user_pw="$adminpassword >> .envtmp
 wget https://raw.githubusercontent.com/rathio-git/iobingraf/main/docker-compose.yaml
 sudo mv docker-compose.yaml /media/docker/iobingraf/docker-compose.yaml
+sudo mv .envtmp /media/docker/iobingraf/.env
 cd /media/docker/iobingraf
 sudo docker-compose up -d
 cd ~
@@ -57,20 +79,20 @@ echo " "
 echo "Installation complete"
 echo "---------------------"
 echo " "
-echo "Iobroker Data"
+echo "Iobroker"
 echo "Port = 8081"
 echo " "
 echo "----------------"
 echo " "
-echo "InfluxDB Data"
+echo "InfluxDB"
 echo "Port = 8086"
-echo "User = admin"
-echo "Password = admin"
-echo "DB-Name = iobroker"
+echo "DB-Name = "$dbname
+echo "User = "$adminname
+echo "Password = "$adminpassword
 echo " "
 echo "----------------"
 echo " "
-echo "Grafana Data"
+echo "Grafana"
 echo "Port = 3000"
 echo " "
 echo " "
